@@ -1,13 +1,177 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4eeff;
+    color: #fff;
+}
+
+.wall {
+    width: 800px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.logo {
+    display: flex;
+    margin: 0 90px 0 0;
+    font-size: 35px;
+    color: #424874;
+    text-transform: uppercase;
+    font-family: "Rubik", sans-serif;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 7px 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: #aea5d1;
+}
+
+.questions {
+    float: right;
+    margin-right: 10px;
+}
+
+.questions li {
+    display: block;
+    padding: 15px 20px;
+    margin: 12px;
+    border-radius: 10px;
+    background-color: rgba(18, 19, 41, 0.5);
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    transition: 0.5s;
+}
+
+.questions li:hover {
+    cursor: pointer;
+    margin: 12px 40px 0 0;
+}
+
+.chat {
+    float: right;
+    width: 400px;
+    height: 500px;
+    background: -webkit-linear-gradient(to bottom, #424874, #424874);
+    background: linear-gradient(to top, #213347, #424874);
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #424874;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #3a3f63;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #272b46;
+}
+
+.chat h2 {
+    padding: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid#35355a;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.question,
+.answer {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.block {
+    position: relative;
+}
+
+.quest {
+    display: block;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 10px;
+    margin-bottom: 70px;
+    background: -webkit-linear-gradient(to bottom, #35355a, #424874);
+    background: linear-gradient(to top, #424874, #2f2f52);
+    color: #ddd;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.answer {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    margin-left: 120px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(to bottom, #213347, #424874);
+    background: linear-gradient(to top, #424874, #424874);
+    background-color: #0b0b16;
+    color: rgb(206, 206, 206);
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.about {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about span {
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    margin: 90px 20px;
+    padding: 20px;
+    background-color: #dcd6f7;
+    font-size: 22px;
+    font-family: "Open Sans", sans-serif;
+    border: 19px solid#f4eeff;
+    color: #424874;
+}
+
+.aImg {
+    position: absolute;
+    width: 600px;
+    margin-left: 190px;
 }
